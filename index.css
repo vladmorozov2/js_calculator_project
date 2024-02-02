@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+}
+.calculator__screen {
+  background-color: black;
+  color: white;
+  height: 85px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 40px;
+}
+
+.calculator__buttons {
+  display: grid;
+
+  grid-template-areas:
+    "first first second third"
+    "forth fifth sixth seventh"
+    "eighth ninth tenth eleventh"
+    "twelfth thirteenth fourteenth fifteenth"
+    "sixteenth sixteenth sixteenth seventeenth";
+}
+.calculator__button {
+  background-color: #df974c;
+  border: 1px solid black;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: normal;
+}
+.calculator {
+  width: 400px;
+}
+.first {
+  grid-area: first;
+}
+
+.second {
+  grid-area: second;
+}
+
+.third {
+  grid-area: third;
+}
+
+.fourth {
+  grid-area: fourth;
+}
+
+.fifth {
+  grid-area: fifth;
+}
+
+.sixth {
+  grid-area: sixth;
+}
+
+.seventh {
+  grid-area: seventh;
+}
+
+.eighth {
+  grid-area: eighth;
+}
+
+.ninth {
+  grid-area: ninth;
+}
+
+.tenth {
+  grid-area: tenth;
+}
+
+.eleventh {
+  grid-area: eleventh;
+}
+
+.twelfth {
+  grid-area: twelfth;
+}
+
+.thirteenth {
+  grid-area: thirteenth;
+}
+
+.fourteenth {
+  grid-area: fourteenth;
+}
+
+.fifteenth {
+  grid-area: fifteenth;
+}
+
+.sixteenth {
+  grid-area: sixteenth;
+}
+
+.seventeenth {
+  grid-area: seventeenth;
+}
+.grey {
+  background-color: #d8d9db;
+  transition: background-color 0.5s ease;
+}
+
+.grey.clicked {
+    background-color:#BBBCBE;
+}
+.white-text {
+    color:white;
+    transition: background-color 0.5s ease;
+}
+.white-text.clicked-orange{
+    background-color: #cc7d2b;
+}
